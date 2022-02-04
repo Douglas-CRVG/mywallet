@@ -1,5 +1,14 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {SignIn, SignUp} from "./pages/pages";
+import "../style/reset.css";
+
 export default function App(){
     return(
-        <h1>Olá de novo, React!</h1>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element = { <SignIn />} />
+                <Route path="/sign-up" element = { <SignUp />} />
+            </Routes>
+        </BrowserRouter>
     )
 }
