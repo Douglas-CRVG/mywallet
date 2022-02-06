@@ -24,11 +24,13 @@ const signUp = [
 const signIn = [
     {
         name: "E-mail",
-        type: "email"
+        type: "email",
+        prop: "email"
     },
     {
         name: "Senha",
-        type: "password"
+        type: "password",
+        prop: "password"
     }
 ];
 
