@@ -22,6 +22,7 @@ const StyledButton = styled.button`
     font-size: 20px;
     font-weight: 700;
     color: #ffffff;
+    ${(props) => props.block && "pointer-events: none; opacity: 0.7;"}
 `;
 
 export {

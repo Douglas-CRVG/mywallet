@@ -1,19 +1,23 @@
 const signUp = [
     {
         name: "Nome",
-        type: "text"
+        type: "text",
+        prop: "name"
     },
     {
         name: "E-mail",
-        type: "email"
+        type: "email",
+        prop: "email"
     },
     {
         name: "Senha",
-        type: "password"
+        type: "password",
+        prop: "password"
     },
     {
         name: "Confirme a senha",
-        type: "password"
+        type: "password",
+        prop: "confirm"
     }
 ];
 
