@@ -1,16 +1,14 @@
 import styled from "styled-components";
 
 const StyledBalance = styled.div`
-    width: calc(100vw - 74px);
-    padding: 3px 0 12px;
-    position: absolute;
-    left: 12px;
-    bottom: 0;
-    z-index: 1;
+    width: 100%;
+    padding: 3px 12px 12px;
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     font-size: 17px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 
     strong{
         font-weight: 700;

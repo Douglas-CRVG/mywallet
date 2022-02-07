@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 const StyledMain = styled.main`
-    height: calc(100vh - 221px);
+    height: calc(100vh - 235px);
     padding: 23px 12px 12px;
     background-color: #ffffff;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
     gap: 23px;
-    position: relative;
 `;
 
 const AlternativeMain = styled.main`

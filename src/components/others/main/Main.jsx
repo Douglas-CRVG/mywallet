@@ -20,10 +20,13 @@ export default function Main({records}){
         )
     } else{
         return (
-            <StyledMain>
-                {records.map((record, index) => <Record {...record} key={index}/>)}
+            <>
+                <StyledMain>
+                    {records.map((record, index) => <Record {...record} key={index}/>)}
+                </StyledMain>
                 <Balance balance={balance} />
-            </StyledMain>
+            </>
+            
         )
     }
 

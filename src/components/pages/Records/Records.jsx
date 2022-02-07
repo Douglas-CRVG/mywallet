@@ -8,18 +8,18 @@ import { getRecords } from "../../../services/axios";
 export default function Records(){
     const [records, setRecords] = useState([]);
     const {token} = useToken();
+    let name;
 
     useEffect(() => {
         getRecords(token).then((response) => {
-            setRecords(response.data)
-        }).catch((error) => {
-            console.log(error.response);
+            setRecords(response.data.records);
+            name = response.data.name;
         })
     }, []);
 
     return(
         <>
-            <Header />
+            <Header name={name}/>
             <Main records={records} />
             <Footer />
         </>

@@ -18,7 +18,7 @@ const StyledRecord = styled.div`
     }
     
     span{
-        color: ${props => props.isPlus ? "green" : "red"}
+        color: ${props => props.isPlus ? "#03AC00" : "#C70000"}
     }
 `;
 
