@@ -3,6 +3,15 @@ import Record from "../record/Record";
 import Balance from "./balance/Balance";
 
 export default function Main({records}){
+    let balance = 0;
+    records.forEach(record => {
+        if(record.isPlus){
+            balance += parseInt(record.value);
+        } else {
+            balance -= parseInt(record.value);
+        }        
+    });
+
     if(records.length === 0){
         return(
             <AlternativeMain>
@@ -13,7 +22,7 @@ export default function Main({records}){
         return (
             <StyledMain>
                 {records.map((record, index) => <Record {...record} key={index}/>)}
-                <Balance />
+                <Balance balance={balance} />
             </StyledMain>
         )
     }
