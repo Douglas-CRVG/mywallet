@@ -34,7 +34,21 @@ const signIn = [
     }
 ];
 
+const saveRecord = [
+    {
+        name: "Valor",
+        type: "number",
+        prop: "value"
+    },
+    {
+        name: "Descrição",
+        type: "text",
+        prop: "description"
+    }
+]
+
 export {
     signUp,
-    signIn
+    signIn,
+    saveRecord
 }

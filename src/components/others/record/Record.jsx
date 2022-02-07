@@ -1,13 +1,13 @@
 import { StyledRecord } from "../../../style/record";
 
-export default function Record ({name, value, date, isPlus}) {
+export default function Record ({description, value, date, isPlus}) {
     return(
         <StyledRecord isPlus={isPlus}>
             <p>
                 <strong>{date}</strong>
-                {name}
+                {description}
             </p>
-            <span>{value.toString().replace(".", ",")}</span>
+            <span>{parseInt(value).toFixed(2).replace(".", ",")}</span>
         </StyledRecord>
     )
 }

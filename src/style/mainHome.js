@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const MainSign = styled.main`
+const MainHome = styled.main`
     height: 100vh;
     background-color: #8c11be;
     display: flex;
@@ -25,6 +25,6 @@ const StyledLink = styled(Link)`
 `;
 
 export {
-    MainSign,
+    MainHome,
     StyledLink
 };

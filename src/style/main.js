@@ -9,6 +9,7 @@ const StyledMain = styled.main`
     display: flex;
     flex-direction: column;
     gap: 23px;
+    position: relative;
 `;
 
 const AlternativeMain = styled.main`
@@ -26,6 +27,10 @@ const AlternativeMain = styled.main`
         color: #868686;
         text-align: center;
     }
+`;
+
+const MainRecord = styled.main`
+
 `;
 
 export {

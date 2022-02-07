@@ -18,8 +18,13 @@ function getRecords(token){
     return axios.get(`${URL}/records`, createConfig(token));
 }
 
+function postRecord(body, token){
+    return axios.post(`${URL}/record`, body, createConfig(token));
+}
+
 export{
     postSignUp,
     postSignIn,
-    getRecords
+    getRecords,
+    postRecord
 }

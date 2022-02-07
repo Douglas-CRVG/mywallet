@@ -8,19 +8,14 @@ import { getRecords } from "../../../services/axios";
 export default function Records(){
     const [records, setRecords] = useState([]);
     const {token} = useToken();
-    console.log(token);
 
-    async function handleGetRecords(){
-        try {
-            const response = await getRecords(token);
-            setRecords(response.data);
-            console.log(response);
-        } catch (error) {
-            console.error(error.response);
-        }
-    }
-
-    useEffect(handleGetRecords, []);
+    useEffect(() => {
+        getRecords(token).then((response) => {
+            setRecords(response.data)
+        }).catch((error) => {
+            console.log(error.response);
+        })
+    }, []);
 
     return(
         <>

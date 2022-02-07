@@ -1,6 +1,6 @@
 import Form from "../../others/form/Form";
 import { signUp } from "../../../utils/utils";
-import { MainSign, StyledLink } from "../../../style/mainSign";
+import { MainHome, StyledLink } from "../../../style/mainHome";
 import useBlock from "../../../hooks/useBlock";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -47,10 +47,10 @@ export default function SignUp(){
     }
 
     return(
-        <MainSign>
+        <MainHome>
             <h1>MyWallet</h1>
             <Form inputs={signUp} button="Cadastrar" func={handleSignUp} data={bodySignUp} setData={setBodySignUp}/>
             <StyledLink to="/">Já tem uma conta? Entre agora!</StyledLink>
-        </MainSign>
+        </MainHome>
     )
 }

@@ -3,19 +3,20 @@ import Record from "../record/Record";
 import Balance from "./balance/Balance";
 
 export default function Main({records}){
-
     if(records.length === 0){
         return(
             <AlternativeMain>
                 <p>Não há registros de entrada ou saída</p>
             </AlternativeMain>
         )
+    } else{
+        return (
+            <StyledMain>
+                {records.map((record, index) => <Record {...record} key={index}/>)}
+                <Balance />
+            </StyledMain>
+        )
     }
 
-    return (
-        <StyledMain>
-            {records.map((record, index) => <Record {...record} key={index}/>)}
-            <Balance />
-        </StyledMain>
-    )
+    
 }

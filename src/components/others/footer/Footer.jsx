@@ -6,7 +6,7 @@ export default function Footer(){
     const navigate = useNavigate();
     return(
         <StyledFooter>
-            <button onClick={() => navigate("/", { replace: true })}>
+            <button onClick={() => navigate("/input-record", { replace: true })}>
                 <AddCircleOutline
                     color={'#ffffff'} 
                     title={"Add records"}
@@ -15,7 +15,7 @@ export default function Footer(){
                 />
                 <p>Nova entrada</p>
             </button>
-            <button onClick={() => navigate("/", { replace: true })}>
+            <button onClick={() => navigate("/output-record", { replace: true })}>
                 <RemoveCircleOutline
                     color={'#ffffff'} 
                     title={"Add records"}

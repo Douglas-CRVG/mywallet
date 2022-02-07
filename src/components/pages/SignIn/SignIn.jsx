@@ -1,6 +1,6 @@
 import Form from "../../others/form/Form";
 import { signIn } from "../../../utils/utils";
-import { MainSign, StyledLink } from "../../../style/mainSign";
+import { MainHome, StyledLink } from "../../../style/mainHome";
 import useBlock from "../../../hooks/useBlock";
 import { useNavigate } from "react-router-dom";
 import { postSignIn } from "../../../services/axios";
@@ -43,10 +43,10 @@ export default function SignIn(){
     }
 
     return(
-        <MainSign>
+        <MainHome>
             <h1>MyWallet</h1>
             <Form inputs={signIn} button="Entrar" func={handleSignIn} data={bodySignIn} setData={setBodySignIn}/>
             <StyledLink to="/sign-up">Primeira vez? Cadastre-se!</StyledLink>
-        </MainSign>
+        </MainHome>
     )
 }

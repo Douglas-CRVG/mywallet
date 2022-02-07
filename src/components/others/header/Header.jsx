@@ -3,8 +3,14 @@ import { useNavigate } from 'react-router-dom'
 import { StyledHeader } from '../../../style/header'
 
 export default function Header({name}){
-    name = "Fulano"
     const navigate = useNavigate();
+    if(name === "Nova saída" || name === "Nova entrada"){
+        return(
+            <StyledHeader>
+                <h1>{name}</h1>
+            </StyledHeader>
+        )
+    }
 
     function exit (){
         if(window.confirm("Deseja sair?")){
