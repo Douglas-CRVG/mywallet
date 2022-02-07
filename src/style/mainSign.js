@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const MainSign = styled.main`
-    padding: 0 25px;
     height: 100vh;
-    background-color: #8c2bbe;
+    background-color: #8c11be;
     display: flex;
     flex-direction: column;
     justify-content: center;

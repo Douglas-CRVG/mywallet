@@ -37,6 +37,7 @@ export default function SignIn(){
         })
         .catch((err)=>{
             setBlock(false);
+            console.log(err.response);
             alert("Erro de usuário ou senha!")
         });
     }
